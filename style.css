@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0f1424;
+  max-width: 144rem;
+  /* position: relative; */
+}
+h4 {
+  font-size: 1.2rem;
+  color: #6f76c8;
+  font-weight: 300;
+}
+
+/* Grid positioning */
+main {
+  width: 30rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: 50% 50% 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "user work play study"
+    "user exercise social self-care";
+  gap: 2rem;
+  margin: 20rem 40rem;
+}
+
+/* Person */
+.person {
+  display: flex;
+  flex-direction: column;
+  color: #bdc1ff;
+  background-color: hsl(235, 45%, 61%);
+  width: 100%;
+  height: 68%;
+  border-radius: 1rem;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+}
+.person h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+}
+.person p {
+  color: white;
+}
+.picture {
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: #1c1f4a;
+  width: 100%;
+  height: 38%;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  position: relative;
+  top: 20rem;
+}
+
+.btns a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+a:active,
+a:visited,
+a:link {
+  color: #6f76c8;
+}
+
+a:hover {
+  color: white;
+}
+/* Categories */
+.dots {
+  height: 0.5rem;
+  width: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.6rem;
+  left: 12rem;
+}
+
+.user {
+  position: relative;
+  grid-area: user;
+}
+.work {
+  grid-area: work;
+}
+.work-header,
+.play-header,
+.study-header {
+  background-color: #ff8c66;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.exercise-header,
+.social-header,
+.self-care-header {
+  background-color: #4acf81;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.play-header {
+  background-color: #56c2e6;
+}
+.study-header {
+  background-color: #ff5c7c;
+}
+
+.social-header {
+  background-color: #7536d3;
+}
+
+.self-care-header {
+  background-color: #f1c65b;
+}
+.work-text,
+.play-text,
+.study-text {
+  background-color: #1c1f4a;
+  position: absolute;
+  width: 15rem;
+  height: 13rem;
+  top: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.exercise-text,
+.social-text,
+.self-care-text {
+  background-color: #1c1f4a;
+  position: absolute;
+  width: 15rem;
+  height: 13rem;
+  top: 39rem;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+.work-hidden {
+  color: white;
+  z-index: 2;
+}
+.play {
+  grid-area: play;
+}
+.study {
+  grid-area: study;
+}
+.exercise {
+  grid-area: exercise;
+}
+.social {
+  grid-area: social;
+}
+.self-care {
+  grid-area: self-care;
+}
+
+.category-title {
+  margin-bottom: 2.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin-top: 25rem;
+  color: white;
+  font-size: 1.2rem;
+}
